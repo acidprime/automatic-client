@@ -35,25 +35,23 @@ AUTOMATIC_ACCESS_TOKEN='1234'
 ```ruby
 require 'automatic/client'
 
-trips = Automatic::Client::Trips.all
+trips = Automatic::Models::Trips.all
 
 # Iterate through the trips
 trips.each do |trip|
-  puts trip.user.id
-  puts trip.vehicle.display_name
+  puts "trip.user #{trip.user}"
+  puts "trip.vehicle #{trip.vehicle}"
 
-  puts trip.start_location.name
-  puts trip.start_at
+  puts "trip.start_location #{trip.start_location.coordinates}"
+  puts "trip.start-at #{trip.start_at}"
 
-  puts trip.end_location.name
-  puts trip.end_at
+  puts "trip.end_location #{trip.end_location.coordinates}"
+  puts "trip.end_at #{trip.end_at}"
 
-  puts trip.distance
-
-  puts trip.fuel_cost
-  puts trip.fuel_volume
-  puts trip.average_mpg
-  puts trip.elapsed_time
+  puts "trip.fuel_cost #{trip.fuel_cost}"
+  puts "trip.fuel_cvlume #{trip.fuel_volume}"
+  puts "trip.average_mpg #{trip.average_mpg}"
+  puts "trip.elapsed_time #{trip.elapsed_time}"
 end
 ```
 
