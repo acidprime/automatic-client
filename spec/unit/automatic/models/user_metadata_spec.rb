@@ -59,5 +59,9 @@ describe Automatic::Models::UserMetadata do
     it "returns an alias for #latest_app_version?" do
       expect(subject.latest_app_version?).to be(false)
     end
+
+    it "returns false for #is_staff" do
+      expect(subject.is_staff).to be(false)
+    end
   end
 end

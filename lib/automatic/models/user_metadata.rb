@@ -73,6 +73,15 @@ module Automatic
       end
       alias :latest_app_version? :is_latest_app_version
 
+      # Returns true if the user is a staff member
+      #
+      # @return [Boolean]
+      def is_staff
+        @attributes.fetch('is_staff', false)
+      end
+      alias :is_staff? :is_staff
+      alias :staff? :is_staff
+
       # Return a collection of Authenticated Clients. These are
       # Automatic Client Applications.
       #

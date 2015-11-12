@@ -10,5 +10,6 @@
   "authenticated_clients": [
     "12354",
     "abcde"
-  ]
+  ],
+  "is_staff": false
 }
