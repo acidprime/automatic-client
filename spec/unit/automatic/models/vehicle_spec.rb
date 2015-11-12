@@ -56,6 +56,10 @@ describe Automatic::Models::Vehicle do
       expect(subject.fuel_level_percent).to eq(83.52)
     end
 
+    it "returns the #fuel_grade" do
+      expect(subject.fuel_grade).to eq('premium')
+    end
+
     it "returns the #battery_voltage" do
       expect(subject.battery_voltage).to eq(14.0)
     end

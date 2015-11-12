@@ -96,6 +96,13 @@ module Automatic
         @attributes.fetch('fuel_level_percent', 0).to_f
       end
 
+      # Returns the designated fuel grade for the vehicle
+      #
+      # @return [String]
+      def fuel_grade
+        @attributes.fetch('fuel_grade', nil)
+      end
+
       # Returns the current battery voltage
       #
       # @return [Float]

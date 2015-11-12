@@ -11,5 +11,6 @@
   "created_at": "2015-08-06T00:21:16.649800Z",
   "updated_at": "2015-08-06T00:21:18.988534Z",
   "fuel_level_percent": 83.52,
+  "fuel_grade": "premium",
   "battery_voltage": 14.0
 }
