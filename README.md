@@ -4,7 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/automatic-client.svg)](http://badge.fury.io/rb/automatic-client)
 
 A wrapper to consume the [Automatic
-API](https://www.automatic.com/developer/documentation/). 
+API](https://developer.automatic.com).
 
 ## Installation
 
